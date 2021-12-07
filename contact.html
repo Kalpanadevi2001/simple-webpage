@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact page</title>
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>	
+		body
+		{
+			margin: 0;
+			background-image: linear-gradient(rgba(80,0,0,0.5),rgba(10,0,0,0.5)),url("lap.jpg");
+		}	
+.menu-bar 
+{
+	background-color: transparent;text-align: center;
+}
+.menu-bar ul
+{
+    display: inline-flex;list-style: none;color: black;
+}
+.menu-bar ul li
+{
+	width: 140px;margin: 17px;padding: 17px;
+}
+.menu-bar ul li a
+{
+	text-decoration: none;color: #fff;
+}
+
+.menu-bar ul li:hover 
+{
+	background: rgba(100,0,0,0.3);
+	border-radius: 200px;
+}
+.menu-bar .fa
+{margin-right: 5px;}
+.upside
+{
+	height: 60vh;width: 100vw;background-image: linear-gradient(rgba(10,0,0,0.6),rgba(100,0,0,0.8)),url(map.gif);
+}
+.downside
+{
+	height: 60vh;width: 100vw;background-color: rgba(100,0,0,0.3);
+}
+.upside h1{color: white;}.upside h4{color: white;}
+ input[type="text"]
+{width: 20%;height:40px;border:2px solid linear-gradient;box-sizing: border-box;outline: none;margin: 8px;font-size: 18px;}
+#icon  input[type="text"]
+{
+	padding-left: 20px;
+}
+#icon {position: relative;transform: translate(15% ,30%);}
+.downside h3{color: white;}
+.downside h1{color: white;}
+#icon a:first-child i{left: 8px;position: absolute;top: 1px;padding: 18px 7px; color:black;}
+#icon a:last-child i{left: 663px;position: absolute;top: 1px;padding: 18px 7px;}
+#icon a:nth-child(2) i{left: 334px;position: absolute;top: 1px;padding: 18px 7px;}
+input[type="number"]
+{width: 20%;height:40px;border:2px solid linear-gradient;box-sizing: border-box;outline: none;margin: 8px;padding-left: 20px;font-size: 18px;}
+input[type="email"]{width: 20%;height:40px;border:2px solid linear-gradient;box-sizing: border-box;outline: none;margin: 8px;padding-left: 30px;font-size: 18px;}
+.comment {position: relative;transform: translate(18% ,25%);}
+.comment input[type="text"]{width: 60%;height:100px;border:2px solid linear-gradient;box-sizing: border-box;outline: none;padding-left: 30px;font-size: px;}
+.comment i{position: absolute;left: 8px;padding: 10px 10px;bottom: 29px;top: 37px}
+ input[type="submit"]
+		{transform: translate(850% ,10%);
+			padding: 10px 20px;cursor: pointer;border-color: lightgreen;background-color: lightgreen;
+		}
+</style>
+</head>
+<body>
+	
+    <div class="upside">
+     <div class="menu-bar">
+    <ul>
+    	<li><a href="file:///C:/Users/Kalpana/Desktop/FIRST/index.html"><i class="fa fa-home"></i>HOME</a></li>
+    	<li><a href="#"><i class="fa fa-graduation-cap"></i>TUTORIALS</a></li>
+    	<li><a href="file:///C:/Users/Kalpana/Desktop/FIRST/private.html	"><i class="fa fa-comments-o"></i>PRIVATE Q & A</a></li>
+    	<li><a href="#"><i class="fa fa-book"></i>EXERCISES</a></li>
+    	<li><a href="file:///C:/Users/Kalpana/Desktop/FIRST/aboutus.html"><i class='fa fa-phone'></i>ABOUT US</a></li>
+    	<li><a href="file:///C:/Users/Kalpana/Desktop/FIRST/login.html" target="_blank"><i class="fa fa-sign-in"></i>log in</a></li>
+    </ul>
+</div>
+<br>
+<br><br><br>
+<center><h1>Let's make something awesome together.</h1><h4>Drop us a line, or give us a heads up if you're interested in visiting us</h4></center>
+</div>
+<hr>
+ <div class="downside">
+<br><center><h1>Get in touch</h1>
+<h3>just share your thoughts with us</h3>
+</center>
+<br><div id="icon">
+	<a><i class="fa fa-user" aria-hidden="true"></i>
+<input type="text"  name="" placeholder="your name" id = "apple"></a>
+<a><i class="fa fa-phone" aria-hidden="true"></i>
+<input type="number" name="" placeholder="your phone number" id = "apple"></a>
+<a><i class="fa fa-envelope" aria-hidden="true"></i>
+<input type="email" name="" placeholder="your email" id = "apple"></a>
+</div>
+<div class="comment">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+	<input type="text" name="" placeholder="your message" id = "apple"><br><br><br>
+    </div><br>
+    <input type="submit" name="" value="submit">
+</body>
+</html>

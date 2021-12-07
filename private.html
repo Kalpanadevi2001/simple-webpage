@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>private page</title>
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+		body
+		{
+			background-image: linear-gradient(rgba(40,0,0,0.5),rgba(60,0,0,0.5)),url(lap.jpg);
+			background-position: center;
+			background-size: cover;
+			height: 100%;
+			background-attachment: fixed;
+
+		}
+		.menu-bar 
+{
+	background-color: transparent;text-align: center;
+}
+.menu-bar ul
+{
+    display: inline-flex;list-style: none;color: black;
+}
+.menu-bar ul li
+{
+	width: 140px;margin: 17px;padding: 17px;
+}
+.menu-bar ul li a
+{
+	text-decoration: none;color: #fff;
+}
+.menu-bar ul li:hover 
+{
+	background: #929292;border-radius: 200px;
+}
+.menu-bar .fa
+{margin-right: 5px;}
+.faqimage
+{
+	width: 15%;
+    height: 12%;
+    left: 26%;
+    position: absolute;
+}
+h1
+{
+	color:  #929292;
+	left: 40%;
+	top: 20%;
+	position: absolute;
+}
+button
+{
+border-radius: 100%;
+width: 50px;
+height: 50px;
+font-size: 40px;
+position: static;
+color: rgba(90,0,0,0.8);
+transform: translate(94vmax,32vmax);
+border: 3px solid black;
+border:20%;
+}
+button:hover 
+{
+	color: green;
+}
+.super
+{
+	color: white;
+	border:2px solid white;
+   height: 28px;
+   width: 14%;
+   padding-left: 50px;
+   transform: translate(76vmax,36vmax);
+   border-radius: 10%;
+}
+#demo 
+{
+	color: white;
+	font-size: 21px;
+	transform: translate(48vmax,10vmax);
+    
+}
+.sub-menu a
+{
+	visibility:hidden;
+	
+}
+.sub-menu a
+{
+	display:block; 
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	border:5px;
+	background-color: rgb(20,0,0);
+	width: 120px;
+}
+
+</style>
+<script>
+function askQuestion()
+{
+ let text;
+ let question=prompt("Enter you question");
+ if(question==null || question=="")
+ {
+ 	text=prompt("please ,Enter youe question.");
+ }
+ else
+ {
+ 	text=question;
+ }
+  document.getElementById("demo").innerHTML=text;
+}
+</script>
+</head>
+<body>
+     <div class="menu-bar">
+    <ul>
+    	<li><a href="file:///C:/Users/Kalpana/Desktop/FIRST/index.html"><i class="fa fa-home"></i>HOME</a></li>
+    	<li><a href="#"><i class="fa fa-graduation-cap"></i>TUTORIALS</a></li>
+    	<li><a href="#"><i class="fa fa-book"></i>EXERCISES</a></li>
+    	<li><a href="file:///C:/Users/Kalpana/Desktop/FIRST/contact.html"><i class='fa fa-phone'></i>CONTACT</a></li>
+    	<li><a href="file:///C:/Users/Kalpana/Desktop/FIRST/aboutus.html"><i class="fa fa-user"></i>ABOUT US</a></li>
+    	<li><a href="file:///C:/Users/Kalpana/Desktop/FIRST/login.html" target="_blank"><i class="fa fa-sign-in"></i>log in</a></li>
+    </ul>
+</div>
+<img src="FAQ.png" class="faqimage"><h1>(Frequently Asked Question)</h1>
+
+<p id="demo"></p>
+<div class="hope"><h3 class="super">Ask your Question</h3></div><button onclick="askQuestion()" type="button">+</button>
+</body>
+</html>

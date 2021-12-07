@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>dreamup tutorials\login page</title>
+	<style>
+	     body{
+			background-image: linear-gradient(rgba(40,0,0,0.5),rgba(60,0,0,0.5)),url(lap.jpg);
+			background-position: center;
+			background-size: cover;
+			height: 100%;
+			background-attachment: fixed;
+		    }
+		.login-box
+		{
+            width: 300px;
+            height: 440px;
+            padding: 60px 30px;
+            position: absolute;
+            background-color: transparent;
+            border-radius: 10px;
+            top: 60%;
+            left: 50%;
+            transform: translate(-60%,-50%);
+            box-sizing: border-box;
+            border: 1px solid white;
+		}
+		.avatar
+		{
+			width: 25%;
+			height: 20%;
+			border-radius: 50%;
+			top: -60px;
+			left: calc(75% - 40%);
+		    position: absolute;
+		    
+		}
+		.login-box h3
+		{
+		   margin: 0;
+		   padding: 0 0 20px;
+		   text-align: center;
+		   color: #fff;
+		   font-size: 21px;
+		   text-decoration: underline;
+
+		}
+		.login-box p
+		{
+			color: #fff;
+			font-weight: bold;
+			font-size: 18px;
+		}
+		.login-box input
+		{
+			width: 100%
+		}
+		.login-box input[type="text"], input[type="password"]
+		{
+			border: none;
+			border-bottom: 1px solid white;
+			background: transparent;
+			outline: none;
+			height: 20px;
+			color: white;
+			font-size: 16px;
+		}
+		.login-box input[type="submit"]
+		{
+
+			border:none;
+			outline: none;
+			height: 40px;
+			background: #929292;
+			color: #fff;
+			font-size: 18px;
+			border-radius: 20px;
+			cursor: pointer;
+		}
+	    .login-box a
+	    {
+	    	text-decoration: none;
+	    	font-size: 16px;
+	    	line-height: 20px;   
+	    	color: darkgrey;
+	    }
+	     .login-box a:hover
+	    {
+	     	color: #fff;
+	    }
+        .menu-bar 
+        {
+	        background-color: transparent;
+	        text-align: center;
+        }
+        .menu-bar ul
+        {
+            display: inline-flex;
+            list-style: none;
+	        color: black;
+        }
+        .menu-bar ul li
+        {
+      	      width: 140px;
+	          margin: 17px;
+	          padding: 17px;
+        }
+        .menu-bar ul li a
+        {
+    	      text-decoration: none;
+    	      color: #fff;
+        }
+        .menu-bar ul li a:hover
+        {
+        	color: rgba(100,0,0,0.7);
+        }
+        .menu-bar ul li:hover 
+        {
+      	      background: #929292;				
+              border-radius: 200px;
+        }
+        .menu-bar .fa
+        {
+    	       margin-right: 5px;
+    	}
+
+.redBG{
+background:red
+}
+#email_error,#pass_error
+{
+	margin-top: 1px;
+	width: 270px;
+	color: #c62828;
+	background-color: rgba(300,0,0,0.1);
+	text-align: center;
+	padding:5px ,5px;
+	visibility: hidden;
+}
+.login-box input[type="submit"]:hover
+{
+	color: rgba(100,0,0,0.7);
+}
+      
+	</style>
+
+
+</head>
+  <body>  
+	  <script>
+		  const emailid =document.getElementById('email')
+          const password=document.getElementById('password')
+          var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ ;
+          function validiation(emailid)
+       {
+	      if(emailid.value.match(mailformat))
+	       {
+			element.style.#email_error.visibility:"visible";
+	       }
+
+	       else
+	       {
+              alert("enter correct email")
+    	   }
+}
+		</script>
+    <div class="menu-bar">
+    <ul>
+    	<li><a href="file:///C:/Users/Kalpana/Desktop/FIRST/index.html"><i class="fa fa-home"></i>HOME</a></li>
+    	<li><a href="#"><i class="fa fa-graduation-cap"></i>TUTORIALS</a>
+          
+      </li>
+    	<li><a href="file:///C:/Users/Kalpana/Desktop/FIRST/private.html"><i class="fa fa-comments-o"></i>PRIVATE Q & A</a></li>
+    	<li><a href="#"><i class="fa fa-book"></i>EXERCISES</a>
+          
+      </li>
+    	<li><a href="file:///C:/Users/Kalpana/Desktop/FIRST/aboutus.html"><i class="fa fa-user"></i>ABOUT US</a></li>
+    	<li><a  href="file:///C:/Users/Kalpana/Desktop/FIRST/contact.html"><i class='fa fa-phone'></i>CONTACT</a></li>
+    	
+    </ul></div>
+
+  	<div class="login-box">
+       	<img src="avatar.png" class="avatar">
+          <h3>DREAMUP TUTORIALS</h3>
+          <form method="post" name="form">
+          	<p>phone number/Email id</p>
+          	<input type="text"  id="email" placeholder="Enter name/Email id" >
+          	<div id="email_error">please enter the valide mail id</div>
+          	<p>password</p>
+          	<input type="password" id="password" placeholder="Enter password">
+          	<div id="pass_error">enter the correct password</div>	
+          	<input type="submit" name="submitbutton" value="Login" onclick="validiation(emailid)">
+          	<br><br>
+          	<a href="#">Forgot password?</a>
+          	<br><br>
+          	<a href="#">Create Account</a>
+          </form>
+   	</div>
+ 
+     	
+  </body>
+</html>
